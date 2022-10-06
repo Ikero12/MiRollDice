@@ -18,8 +18,10 @@ package com.example.android.diceroller
 
 import android.os.Bundle
 import android.widget.Button
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import kotlin.random.Random
 
 class MainActivity : AppCompatActivity() {
 
@@ -45,5 +47,10 @@ class MainActivity : AppCompatActivity() {
 
         // TODO (05) In rollDice set the random value that you got above as the
         // text of the TextView
+    }
+    private fun rollDice(){
+        val randomnumber = Random.nextInt(6)+1
+        var textview:TextView= findViewById(R.id.result_text)
+        textview.text = randomnumber.toString()
     }
 }
