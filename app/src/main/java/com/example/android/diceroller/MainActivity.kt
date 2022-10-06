@@ -32,10 +32,11 @@ class MainActivity : AppCompatActivity() {
             // TODO (02) Remove the Toast and instead create a method called rollDice here. You can
             // use the keyboard shortcut:
             //    Windows/Linux - Alt + Enter
-            //    Mac - Option + Enter
 
-            Toast.makeText(this, "button clicked", Toast.LENGTH_SHORT).show()
+           rollDice()
         }
+
+
 
         // TODO (03) In rollDice get a Random int between 1 and 6
 
